@@ -1,12 +1,13 @@
-// Concatenate two arrays
+// /primitive type
+type PrimitiveType = string | number | boolean;
 
-const concatArr = (arr1, arr2) => {
+// Concatenate two arrays
+export const concatArr = <T, U>(arr1: T[], arr2: U[]) => {
   return [...arr1, ...arr2];
 };
 
 // Add numbers in an array
-
-const addArr = (arr) => {
+export const addArr = (arr: number[]): number => {
   let total = 0;
   arr.forEach((x) => {
     total += x;
@@ -15,10 +16,10 @@ const addArr = (arr) => {
 };
 
 // Find the largest number in an array
-const lgNum = (arr) => {
+export const lgNum = (arr: (number | string)[]): number => {
   let largest = 0;
   arr.forEach((x) => {
-    if (x > largest) {
+    if (typeof x === 'number' && x > largest) {
       largest = x;
     }
   });
@@ -26,14 +27,7 @@ const lgNum = (arr) => {
 };
 
 // Remove the 3rd item from an array
-const cut3 = (arr) => {
+export const cut3 = (arr: PrimitiveType[]): PrimitiveType[] => {
   arr.splice(2, 1);
   return arr;
-};
-
-module.exports = {
-  concatArr,
-  addArr,
-  lgNum,
-  cut3,
 };

@@ -1,33 +1,25 @@
 // multiply
 
-const multiply = (num1, num2) => {
-    return num1 * num2;
+export const multiply = (num1: number, num2: number): number => {
+  return num1 * num2;
 };
 
 // add
-const sum = (num1, num2) => {
-    return num1 + num2;
+export const sum = (num1: number, num2: number): number => {
+  return num1 + num2;
 };
 
 // divide
-const divide = (num1, num2) => {
-    return num1 / num2;
+export const divide = (num1: number, num2: number): number => {
+  return num1 / num2;
 };
 
 // subtract
-const subtract = (num1, num2) => {
-    return num1 - num2;
+export const subtract = (num1: number, num2: number): number => {
+  return num1 - num2;
 };
 
 // square
-const square = (num) => {
-    return num * num;
+export const square = (num: number): number => {
+  return num * num;
 };
-
-module.exports = {
-    multiply,
-    subtract,
-    divide,
-    sum,
-    square
-  };
