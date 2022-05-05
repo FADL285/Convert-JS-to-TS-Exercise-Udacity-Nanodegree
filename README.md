@@ -1,5 +1,5 @@
 # Convert-JS-to-TS-Exercise-Udacity-Nanodegree
-Convert JS to TS Exercise | Backend Development with Node.js Nanodegree from Udacity
+Convert JS to TS Exercise | Full Stack JS NanoDegree from Udacity
 
 # Instructions
 Convert this JavaScript project to TypeScript. TypeScript is already installed and ready to go.
